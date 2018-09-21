@@ -1,0 +1,5 @@
+type Mutation {
+	newTestSubject(info: InputSubject!): TestSubject!
+	addMoveData(info: InputMoveData!): MoveData!
+	initTest(info: NewTest!): SingleTest!
+}

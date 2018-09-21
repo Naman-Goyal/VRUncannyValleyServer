@@ -1,0 +1,15 @@
+# import MoveData from "moveData.graphql"
+# import ObjectID from "objectID.graphql"
+
+type SingleTest {
+	_id: ObjectID!
+	model: Int!
+	animacy: Int!
+	moveData: [MoveData]!
+}
+
+input NewTest {
+	model: Int!
+	animacy: Int!
+	user_id: ObjectID!
+}

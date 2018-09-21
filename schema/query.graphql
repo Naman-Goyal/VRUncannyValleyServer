@@ -1,0 +1,6 @@
+# import TestSubject from "testSubject.graphql"
+
+type Query {
+	allSubjects: [TestSubject]
+	test: String
+}

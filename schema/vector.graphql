@@ -1,0 +1,8 @@
+# import ObjectID from "objectID.graphql"
+
+type Vector3 {
+	_id: ObjectID!
+	x: Float!
+	y: Float!
+	z: Float!
+}

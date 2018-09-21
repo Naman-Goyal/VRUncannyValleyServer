@@ -1,0 +1,14 @@
+# import SingleTest from "singleTest.graphql"
+# import Date from "date.graphql"
+# import ObjectID from "objectID.graphql"
+
+type TestSubject {
+	_id: ObjectID!
+	tests: [SingleTest]
+	age: Int!
+	date: Date!
+}
+
+input InputSubject {
+	age: Int!
+}

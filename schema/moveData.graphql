@@ -1,0 +1,21 @@
+# import Date from "date.graphql"
+# import Vector3 from "vector.graphql"
+# import ObjectID from "objectID.graphql"
+
+type MoveData {
+	_id: ObjectID!
+	rotation: Vector3!
+	position: Vector3!
+	time: Date!
+}
+
+input InputMoveData {
+	time: Date!
+	pos_x: Float!
+	pos_y: Float!
+	pos_z: Float!
+	rot_x: Float!
+	rot_y: Float!
+	rot_z: Float!
+	test_id: ObjectID!
+}
