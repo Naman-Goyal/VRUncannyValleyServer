@@ -1,10 +1,16 @@
 import { Vector3 } from "../models";
 
 export const MoveData = {
-	rotation: (model) => {
-		return Vector3.findRotationById(model.id);
+	user_rotation: (model) => {
+		return Vector3.findPlayerRotationById(model.id);
 	},
-	position: (model) => {
-		return Vector3.findPositionById(model.id);
+	user_position: (model) => {
+		return Vector3.findPlayerPositionById(model.id);
+	},
+	model_rotation: (model) => {
+		return Vector3.findModelRotationById(model.id);
+	},
+	model_position: (model) => {
+		return Vector3.findModelPositionById(model.id);
 	},
 }

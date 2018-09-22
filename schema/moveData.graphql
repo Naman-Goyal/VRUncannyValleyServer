@@ -4,18 +4,26 @@
 
 type MoveData {
 	_id: ObjectID!
-	rotation: Vector3!
-	position: Vector3!
+	user_rotation: Vector3!
+	user_position: Vector3!
+	model_rotation: Vector3!
+	model_position: Vector3!
 	time: Date!
 }
 
 input InputMoveData {
 	time: Date!
-	pos_x: Float!
-	pos_y: Float!
-	pos_z: Float!
-	rot_x: Float!
-	rot_y: Float!
-	rot_z: Float!
+	user_pos_x: Float!
+	user_pos_y: Float!
+	user_pos_z: Float!
+	user_rot_x: Float!
+	user_rot_y: Float!
+	user_rot_z: Float!
+	model_pos_x: Float!
+	model_pos_y: Float!
+	model_pos_z: Float!
+	model_rot_x: Float!
+	model_rot_y: Float!
+	model_rot_z: Float!
 	test_id: ObjectID!
 }

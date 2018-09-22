@@ -1,12 +1,20 @@
 import { Vector3 as db } from "../mongoose";
 
 
-const findRotationById = (id) => {
-	return db.findOne({is_position:false, move_data_id:id});
+const findPlayerRotationById = (id) => {
+	return db.findOne({is_position:false, is_model:false, move_data_id:id});
 };
 
-const findPositionById = (id) => {
-	return db.findOne({is_position:true, move_data_id:id});
+const findPlayerPositionById = (id) => {
+	return db.findOne({is_position:true, is_model:false, move_data_id:id});
+};
+
+const findModelRotationById = (id) => {
+	return db.findOne({is_position:false, is_model:true, move_data_id:id});
+};
+
+const findModelPositionById = (id) => {
+	return db.findOne({is_position:true, is_model:true, move_data_id:id});
 };
 
 const create = (vector) => {
@@ -14,7 +22,9 @@ const create = (vector) => {
 };
 
 export const Vector3 = {
-	findRotationById,
-	findPositionById,
+	findPlayerRotationById,
+	findPlayerPositionById,
+	findModelRotationById,
+	findModelPositionById,
 	create
 }
