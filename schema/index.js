@@ -24,7 +24,8 @@ const apollo = new ApolloServer({
 	},
 	engine: {
 		apiKey: "service:Naman-Goyal-4755:Z-h8TenAdH37BgaUoCu_TQ"
-	}
+	},
+	introspection:true
 });
 
 export default apollo;
