@@ -17,7 +17,7 @@ const apollo = new ApolloServer({
 	typeDefs: typeDefs,
 	resolvers: resolvers,
 	playground: {
-		endpoint: `http://localhost:4000/graphql`,
+		endpoint: `https://vr-test-server.herokuapp.com/graphql`,
 		settings: {
       		'editor.theme': 'dark'
     	}
