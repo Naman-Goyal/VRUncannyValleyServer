@@ -1,4 +1,4 @@
-import { ApolloServer } from "apollo-server-express";
+import { ApolloServer } from "apollo-server";
 import { importSchema } from "graphql-import";
 import {makeExecutableSchema} from 'graphql-tools';
 
@@ -9,8 +9,8 @@ import resolvers from '../resolvers';
 
 // Make schema
 const executableSchema = makeExecutableSchema({
-  typeDefs,
-  resolvers,
+	typeDefs,
+	resolvers,
 });
 
 const apollo = new ApolloServer({
@@ -21,6 +21,9 @@ const apollo = new ApolloServer({
 		settings: {
       		'editor.theme': 'dark'
     	}
+	},
+	engine: {
+		apiKey: "service:Naman-Goyal-4755:Z-h8TenAdH37BgaUoCu_TQ"
 	}
 });
 
